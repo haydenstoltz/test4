@@ -6,7 +6,7 @@
     <title>John & Jane's Wedding</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f9f5e8; /* Cream color */
@@ -58,18 +58,15 @@
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 10px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+            justify-items: center;
+            align-items: center;
+            padding: 20px;
         }
         .gallery img {
-            width: 100%;
+            max-width: 100%;
             height: auto;
-            border-radius: 5px;
-            transition: transform 0.3s ease;
-        }
-        .gallery img:hover {
-            transform: scale(1.1);
         }
     </style>
 </head>
@@ -86,6 +83,7 @@
     <a href="#rsvp">RSVP</a>
     <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
+    <a href="new_page.html">New Page</a>
 </nav>
 
 <section id="home">
@@ -125,9 +123,10 @@
 <section id="gallery">
     <h2>Gallery</h2>
     <div class="gallery">
-        <img src="image1.jpg" alt="Wedding Photo">
-        <img src="image2.jpg" alt="Wedding Photo">
-        <!-- Add more images as needed -->
+        <img src="image1.jpg" alt="Wedding photo">
+        <img src="image2.jpg" alt="Wedding photo">
+        <img src="image3.jpg" alt="Wedding photo">
+        <!-- Add more images -->
     </div>
 </section>
 
