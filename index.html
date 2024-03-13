@@ -3,46 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Wedding</title>
+    <title>John & Jane's Wedding</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f6f6f2;
+            overflow-x: hidden;
         }
         header {
-            background-color: #fff;
+            background-color: #e6f7ff;
             padding: 20px;
             text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
         }
         h1 {
-            color: #333;
-            font-size: 36px;
-            margin-bottom: 0;
+            color: #005c99;
+            font-size: 42px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
         }
         nav {
-            background-color: #333;
-            color: #fff;
+            background-color: #005c99;
+            color: #ffffff;
             padding: 10px 0;
             text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
         }
         nav a {
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
             padding: 0 15px;
             font-size: 18px;
         }
         section {
-            padding: 20px;
-            background-color: #fff;
-            margin-bottom: 20px;
+            padding: 80px 20px;
+            background-color: #ffffff;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 999;
         }
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #005c99;
+            color: #ffffff;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
+            position: relative;
+            z-index: 1000;
+        }
+        .moving-hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: -1;
+        }
+        .heart {
+            position: absolute;
+            width: 100px;
+            height: 90px;
+            background: url('heart.png') no-repeat;
+            background-size: contain;
+            animation: heartBeat 1s infinite;
+            pointer-events: none;
+        }
+        @keyframes heartBeat {
+            0%, 100% {
+                transform: scale(0.8);
+            }
+            50% {
+                transform: scale(1.1);
+            }
         }
     </style>
 </head>
@@ -110,6 +150,13 @@
 <footer>
     <p>&copy; 2024 John & Jane's Wedding. All rights reserved.</p>
 </footer>
+
+<div class="moving-hearts">
+    <div class="heart" style="top: 50%; left: 30%; animation-duration: 2s;"></div>
+    <div class="heart" style="top: 40%; left: 60%; animation-duration: 1.5s;"></div>
+    <div class="heart" style="top: 60%; left: 10%; animation-duration: 1.7s;"></div>
+    <!-- Add more hearts or customize positions as desired -->
+</div>
 
 </body>
 </html>
