@@ -3,54 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hayden Stolzenberg's Page</title>
+    <title>Our Wedding</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #333;
-            color: #fff;
             margin: 0;
             padding: 0;
+            background-color: #f0f0f0;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+        header {
+            background-color: #fff;
             padding: 20px;
-        }
-        h1 {
             text-align: center;
         }
-        h2 {
-            margin-top: 40px;
-            font-size: 24px;
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 0;
         }
-        .blog-section {
-            margin-top: 20px;
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 15px;
+            font-size: 18px;
+        }
+        section {
+            padding: 20px;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Hayden Stolzenberg's Page</h1>
-        <div class="blog-section">
-            <h2>Blog 1</h2>
-            <!-- Add your content for Blog 1 here -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum tortor sit amet metus dignissim, ut mattis nunc bibendum.</p>
-            <!-- Placeholder for an image -->
-            <img src="placeholder1.jpg" alt="Placeholder image 1">
-        </div>
-        <div class="blog-section">
-            <h2>Blog 2</h2>
-            <!-- Add your content for Blog 2 here -->
-            <p>Integer a justo et velit vestibulum tincidunt. Proin eu odio nec urna commodo consequat.</p>
-            <!-- Placeholder for another image -->
-            <img src="placeholder2.jpg" alt="Placeholder image 2">
-        </div>
-    </div>
+
+<header>
+    <h1>John & Jane's Wedding</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#events">Events</a>
+    <a href="#rsvp">RSVP</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Our Wedding Website!</h2>
+    <p>We are excited to share our special day with you. Please browse through the site for more information.</p>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>John and Jane met in college and fell in love. After years of adventures together, they have decided to take the next step and tie the knot.</p>
+</section>
+
+<section id="events">
+    <h2>Events</h2>
+    <p>Join us for the following events:</p>
+    <ul>
+        <li>Wedding Ceremony - Date & Time</li>
+        <li>Reception - Date & Time</li>
+        <!-- Add more events as needed -->
+    </ul>
+</section>
+
+<section id="rsvp">
+    <h2>RSVP</h2>
+    <p>Please RSVP by filling out the form below:</p>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="attendees">Number of Attendees:</label>
+        <input type="number" id="attendees" name="attendees" required><br>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <!-- Add images or videos of your choice -->
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>For any inquiries or questions, please feel free to contact us:</p>
+    <p>Email: johnandjane@example.com</p>
+    <p>Phone: 123-456-7890</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 John & Jane's Wedding. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
